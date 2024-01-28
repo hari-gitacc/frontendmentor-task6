@@ -7,7 +7,7 @@ import crewBg from './assets/crew/background-crew-desktop.jpg';
 import techBg from './assets/technology/background-technology-desktop.jpg';
 import { useState } from "react";
 
-function App({NavIndicator}) {
+function App({NavIndicator,setNavIndicator}) {
 
   return (
     <div style={NavIndicator==="home"?{backgroundImage: `url(${homeBg})`}:NavIndicator==='dest'?{backgroundImage: `url(${destBg})`}:NavIndicator==='crew'?{backgroundImage: `url(${crewBg})`}:{backgroundImage: `url(${techBg})`}} className="tablet:pl-[4rem]  tablet:pt-[2rem] bg-cover  bg-center ">
