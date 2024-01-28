@@ -7,7 +7,7 @@ import DataContext from '../datacontext/datacontext'
 
 const Header = () => {
   const [Burger, setBurger] = useState(false)
-  const {setNavIndicator} = useContext(DataContext)
+  const {setNavIndicator,NavIndicator} = useContext(DataContext)
   const handleBurgerClick =()=>{
     setBurger(!Burger)
   }
