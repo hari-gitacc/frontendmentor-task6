@@ -43,13 +43,13 @@ const Header = () => {
  
     </nav>
     <div style={Burger===false?{position:'fixed',
-right:'-20rem'}:{position:'absolute',
-right:'0rem'}} className='tablet:hidden absolute pl-0 ml-0  flex w-[100%]'>
-            <ul className='h-[85vh] z-10 flex flex-col pl-8  text-white  justify-around w-[100%] backdrop-blur-lg '>
-            <li onClick={handleBurgerClick}><Link to='/'><span className='mr-3'>00</span>home</Link></li>
-            <li onClick={handleBurgerClick}><Link to='/destination'><span className='mr-3'>01</span>destination</Link></li>
-            <li onClick={handleBurgerClick}><Link to='/crew'><span className='mr-3'>02</span>crew</Link></li>
-            <li onClick={handleBurgerClick}><Link to='/technology'><span className='mr-3'>03</span>technology</Link></li>
+right:'-28rem',transition: 'right 0.3s ease-in-out' }:{position:'absolute',
+right:'0rem',transition: 'right 0.3s ease-in-out' }} className='tablet:hidden font-primary  absolute pl-0 ml-0  flex w-[100%]'>
+            <ul className='h-[85vh] transition-all duration-300 z-10 flex flex-col pl-8  text-white  justify-around w-[100%] backdrop-blur-lg '>
+            <li className='text-[1.1rem] uppercase'  onClick={handleBurgerClick}><Link to='/'><span className='mr-3'>00</span>home</Link></li>
+            <li className='text-[1.1rem] uppercase'  onClick={handleBurgerClick}><Link to='/destination'><span className='mr-3'>01</span>destination</Link></li>
+            <li className='text-[1.1rem] uppercase'  onClick={handleBurgerClick}><Link to='/crew'><span className='mr-3'>02</span>crew</Link></li>
+            <li  className='text-[1.1rem] uppercase' onClick={handleBurgerClick}><Link to='/technology'><span className='mr-3'>03</span>technology</Link></li>
             </ul>
       </div>
     </div>

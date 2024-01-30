@@ -36,8 +36,8 @@ const Destination = () => {
         </ul>
         <div className="w-[100%] tablet:h-[70vh] ">
           <h1 className="tablet:text-[6rem] text-[2rem] tablet:text-left mt-4 tablet:mt-0 text-center  tracking-widest uppercase font-secondary">{Destination.name}</h1>
-          <p className="font-para tablet:mt-0 mt-[.5rem]  tracking-[1px] laptop:w-[75%] tabet:w-[560px] tablet:text-left tablet:ml-0 ml-7 text-center w-[270px] tablet:leading-[2rem]">{Destination.description}</p>
-          <div className="h-[1px] tablet:mt-[2rem] my-[2rem] tablet:w-[100%] w-[80%] bg-slate-600"></div>
+          <p className="font-para tablet:mt-0 mt-[.5rem]  tracking-[1px] mobile-M:text-center  mobile-M:w-[100%] px-6 laptop:w-[75%] tabet:w-[560px] tablet:text-left tablet:ml-0 ml-7 mobile-M:ml-0 text-center w-[270px] tablet:leading-[2rem]">{Destination.description}</p>
+          <div className="h-[1px] tablet:mt-[2rem] my-[2rem] tablet:w-[100%] w-[100%] bg-slate-600"></div>
           <div className="flex flex-col tablet:flex-row tablet:text-start text-center tablet:items-start items-center tablet:space-y-0 space-y-2 tablet:space-x-[5.6rem]">
             <div>
               <h1  className="font-primary tracking-widest text-[1.2rem]">AVG.DISTANCE</h1>

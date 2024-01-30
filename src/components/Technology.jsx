@@ -35,7 +35,7 @@ const Technology = () => {
             <h1 className="font-secondary text-[1.5rem] tablet:text-[2.9rem] uppercase">
               {Tech.name}
             </h1>
-            <p className="font-para text-center tablet:text-left tablet:mx-0 mx-3  mt-[1rem] tablet:tracking-[.1rem] laptop:w-[400px] laptop-l:w-[560px] tablet:leading-[2rem]">
+            <p className="font-para text-center tablet:text-left tablet:mx-0 mx-3  mt-[1rem] tracking-[.1rem]  laptop:w-[400px] laptop-l:w-[560px] leading-[2rem]">
               {Tech.description}
             </p>
           </div>
@@ -43,7 +43,7 @@ const Technology = () => {
       </section>
      
       <section className="tablet:pl-[4rem] laptop-l:pr-0 tablet:pr-7 laptop-l:mt-0 tablet:mt-[4rem] mt-4 tablet:block flex justify-center  overflow-hidden">
-        <img src={Tech.images.portrait} className="tablet:w-[100%]" alt={Tech.name} />
+        <img src={Tech.images.portrait} className="mobile-M:w-[300px] tablet:w-[100%]" alt={Tech.name} />
       </section>
       <div className="text-[1.2rem]  tablet:hidden  fontdesign flex justify-center  tracking-widest">
             <span>03</span>
