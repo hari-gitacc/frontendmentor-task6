@@ -5,7 +5,7 @@ import Json from '/src/data/data.json'
 const Technology = () => {
   const {TechIndicator,Tech,handleTechClick} = useContext(DataContext)
   return (
-    <main className="tablet:grid flex flex-col-reverse text-white laptop-l:ml-[4rem] tablet:ml-[1rem] pt-[3rem] grid-cols-main ">
+    <main className="tablet:grid flex flex-col-reverse text-white laptop-l:ml-[4rem] pb-8 tablet:pb-0 tablet:ml-[1rem] pt-[3rem] grid-cols-main ">
       <section className="flex tablet:items-start items-center  tablet:flex-row flex-col  tablet:justify-center">
      
         <ul className="flex tablet:flex-col   tablet:justify-center tablet:mr-8 justify-around tablet:w-[100%] w-[240px]  items-center tablet:h-[100vh] ">

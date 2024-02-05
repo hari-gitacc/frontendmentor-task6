@@ -3,6 +3,8 @@ import DataContext from "../datacontext/datacontext";
 import Json from '/src/data/data.json'
 
 
+
+
 const Crew = () => {
     const {CrewIndicator,Crew,handleCrewClick} = useContext(DataContext)
   return (
@@ -20,7 +22,7 @@ const Crew = () => {
           <h1 className="font-secondary text-[1.5rem] tablet:text-[2.9rem] uppercase">
             {Crew.name}
           </h1>
-          <p className="font-para  mt-[1rem] tablet:pb-0 pb-[4rem] tablet:tracking-[.1rem] tablet:w-[560px] tablet:mx-0 mx-2 leading-[2rem]">
+          <p className="font-para h-[250px] mt-[1rem] tablet:pb-0 pb-[4rem] tablet:tracking-[.1rem] tablet:w-[560px] tablet:mx-0 mx-2 leading-[2rem]">
             {Crew.bio}
           </p>
         </div>
@@ -36,6 +38,8 @@ const Crew = () => {
               <div className="h-[25px] cursor-pointer w-[25px] rounded-full bg-white "></div>
             </li>
           ))}
+
+  
         </ul>
       </section>
       <section className="overflow-hidden tablet:block flex justify-center items-center flex-col">
@@ -46,6 +50,7 @@ const Crew = () => {
           {(Json.crew).map((data) => (
             <li
               key={data.id}
+              style={CrewIndicator===data.id?{opacity:'1'}:{opacity:'.4'}}
               id={data.name}
               onClick={() => handleCrewClick(data.id)}
             >

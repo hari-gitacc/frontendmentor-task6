@@ -6,7 +6,7 @@ import data from '/src/data/data.json'
 const Home = () => {
   const {setNavIndicator} = useContext(DataContext)
   return (
-    <section className='text-white flex-col  tablet:flex-row items-center flex h-[100vh]'>
+    <section className='text-white flex-col  tablet:flex-row items-center flex tablet:h-[100vh] h-[85vh]'>
         <div className='tablet:w-[700px] tablet:space-y-5   tracking-widest  tablet:ml-[8rem]'>
         <h3 className='uppercase tablet:text-[1.3rem] tablet:mt-0 mt-[2rem] tablet:text-left text-center font-primary'>so,you want to travel to</h3>
         <h1 className='tablet:text-[6rem]  text-[3.5rem]  tablet:text-left text-center tracking-widest uppercase   font-secondary'>space</h1>

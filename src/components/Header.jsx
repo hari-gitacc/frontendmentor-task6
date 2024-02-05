@@ -18,9 +18,9 @@ const Header = () => {
   return (
     <div className=''>    
     <nav className='text-white tablet:px-0 px-[1rem] tablet:h-[100%]  h-[15vh] text-[1.2rem] font-primary capitalize flex justify-between '>
-      <img src={logo} className='tablet:mt-[1rem] hidden tablet:block w-[50px] h-[50px]' alt="" />
-     <div className='tablet:hidden h-[20vh] items-center flex justify-between w-[100%]'>
-     <img src={logo} className='tablet:mt-[1rem] cursor-pointer w-[50px] h-[50px]' alt="" />
+      <img src={logo} className='tablet:mt-[1rem]  z-20 hidden tablet:block w-[50px] h-[50px]' alt="" />
+     <div className='tablet:hidden z-20 h-[20vh] items-center flex justify-between w-[100%]'>
+     <img src={logo} className='tablet:mt-[1rem] cursor-pointer w-[50px] h-[50px] z-20' alt="" />
   
    
   <img src={burger} onClick={handleBurgerClick} className='w-[25px] ursor-pointer tablet:hidden h-[25px]' alt="" />
@@ -44,8 +44,8 @@ const Header = () => {
     </nav>
     <div style={Burger===false?{position:'fixed',
 right:'-28rem',transition: 'right 0.3s ease-in-out' }:{position:'absolute',
-right:'0rem',transition: 'right 0.3s ease-in-out' }} className='tablet:hidden font-primary  absolute pl-0 ml-0  flex w-[100%]'>
-            <ul className='h-[85vh] transition-all duration-300 z-10 flex flex-col pl-8  text-white  justify-around w-[100%] backdrop-blur-lg '>
+right:'0rem',transition: 'right 0.3s ease-in-out' }} className='tablet:hidden font-primary top-0 h-[100vh]  absolute pl-0 ml-0  flex w-[60%]'>
+            <ul className='transition-all duration-300 z-10 flex flex-col pl-8 pt-[6rem] text-white  justify-around w-[100%] backdrop-blur-3xl '>
             <li className='text-[1.1rem] uppercase'  onClick={handleBurgerClick}><Link to='/'><span className='mr-3'>00</span>home</Link></li>
             <li className='text-[1.1rem] uppercase'  onClick={handleBurgerClick}><Link to='/destination'><span className='mr-3'>01</span>destination</Link></li>
             <li className='text-[1.1rem] uppercase'  onClick={handleBurgerClick}><Link to='/crew'><span className='mr-3'>02</span>crew</Link></li>
